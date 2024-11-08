@@ -1,4 +1,9 @@
 .main{
     font-family: 'Roboto', sans-serif;
     color: #333;
+    /*    使内容都居中，两边都是空白*/
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 1rem;
+
 }
