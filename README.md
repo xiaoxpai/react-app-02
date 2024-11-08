@@ -1,4 +1,28 @@
 
+
+# 自定义通用组件，卡片组件（2024年11月8日）
+
+- 实现了自定义卡片组件
+- 改善了导航栏样式
+- 使用卡片组件嵌套Item组件，实现了列表页的效果
+
+![react-card-component.gif](document%2Freact-card-component.gif)
+
+
+# 自定义特定组件效果演示(2024年11月7日)
+
+## 创建自定义组件，使成为可复用组件
+
+> 场景是：
+>  一个列表页，有10条数据，每条数据都有一个详情按钮，点击详情按钮
+> 现在创建组件（一个List组件）（每个List组件有一个子组件Item）
+> - 案例: AllMeetupsPage>>MeetupsList>>MeetupsItem
+> - 父组件AllMeetupsPage传递数据给MeetupsList，MeetupsList传递数据给MeetupsItem
+
+
+![react-customer-component.gif](document%2Freact-customer-component.gif)
+
+
 # v6版本的react-router-dom 语法已修改(2024年11月5日)
 > 不支持switch，否则报错
 
@@ -17,18 +41,7 @@
 ![react-link-navigation.gif](document%2Freact-link-navigation.gif)
 
 
-# 自定义特定组件效果演示(2024年11月8日)
 
-## 创建自定义组件，使成为可复用组件
-
-> 场景是：
->  一个列表页，有10条数据，每条数据都有一个详情按钮，点击详情按钮
-> 现在创建组件（一个List组件）（每个List组件有一个子组件Item）
-> - 案例: AllMeetupsPage>>MeetupsList>>MeetupsItem
-> - 父组件AllMeetupsPage传递数据给MeetupsList，MeetupsList传递数据给MeetupsItem
- 
-
-![react-customer-component.gif](document%2Freact-customer-component.gif)
 
 
 
