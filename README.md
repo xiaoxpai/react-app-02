@@ -8,6 +8,28 @@
 
 ![react-card-component.gif](document%2Freact-card-component.gif)
 
+## 重构了布局组件Layout
+
+> 使用布局组件，包裹整个页面，在App.js替换原有的布局,<div> replace <Layout>
+
+```js
+       <Layout>
+    {/*<MainNavigation/>*/}
+    <Routes>
+        <Route path="/" element={<AllMeetupsPage/>}/>
+        <Route path="/new-meetups" element={<NewMeetupsPage/>}/>
+        <Route path="/favorites" element={<FavoritesPage/>}/>
+    </Routes>
+
+</Layout>
+```
+- 创建了新的布局组件Layout
+- 修改了列表样式
+
+最终的效果如下图：
+![react-layout.png](document%2Freact-layout.png)
+
+
 
 # 自定义特定组件效果演示(2024年11月7日)
 
