@@ -1,3 +1,37 @@
+
+# v6版本的react-router-dom 语法已修改(2024年11月5日)
+> 不支持switch，否则报错
+
+```javascript
+<div>
+    <Routes>
+        <Route path="/" element={<AllMeetupsPage/>}/>
+        <Route path="/new-meetups" element={<NewMeetupsPage/>}/>
+        <Route path="/favorites" element={<FavoritesPage/>}/>
+    </Routes>
+</div>
+```
+
+# 新增导航栏页面效果演示
+
+![react-link-navigation.gif](document%2Freact-link-navigation.gif)
+
+
+# 自定义特定组件效果演示(2024年11月8日)
+
+## 创建自定义组件，使成为可复用组件
+
+> 场景是：
+>  一个列表页，有10条数据，每条数据都有一个详情按钮，点击详情按钮
+> 现在创建组件（一个List组件）（每个List组件有一个子组件Item）
+> - 案例: AllMeetupsPage>>MeetupsList>>MeetupsItem
+> - 父组件AllMeetupsPage传递数据给MeetupsList，MeetupsList传递数据给MeetupsItem
+ 
+
+![react-customer-component.gif](document%2Freact-customer-component.gif)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
