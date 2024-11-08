@@ -4,7 +4,7 @@ import {Routes,Route} from "react-router-dom";
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupsPage from "./pages/NewMeetups";
 import FavoritesPage from "./pages/Favorites";
-import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/Layout";
 
 function App() {
 
@@ -12,16 +12,18 @@ function App() {
     ///new-meetups
     ///favorites
     return (
-        <div>
-            <MainNavigation/>
+        <Layout>
+            {/*<MainNavigation/>*/}
             <Routes>
                 <Route path="/" element={<AllMeetupsPage/>}/>
                 <Route path="/new-meetups" element={<NewMeetupsPage/>}/>
                 <Route path="/favorites" element={<FavoritesPage/>}/>
             </Routes>
 
-        </div>
+        </Layout>
     );
 }
 
 export default App;
+
+//重点!!! MainNavigation已经在Layout中引入了，所以这里不需要再引入了
