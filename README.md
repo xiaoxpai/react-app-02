@@ -30,6 +30,20 @@
 ![react-layout.png](document%2Freact-layout.png)
 
 
+## 完成了子组件传递数据给父组件
+
+![react-sub-to-father.png](document%2Freact-sub-to-father.png)
+
+## 完成了发送Http Request请求
+
+![react-send-http-request.png](document%2Freact-send-http-request.png)
+
+## 使用了V6版本的react-router-dom，useNavigate()代替了useHistory()钩子函数
+
+![react-useNavigate.png](document%2Freact-useNavigate.png)
+
+
+
 # 更新：2024年11月7日
 ##  自定义特定组件效果演示()
 
