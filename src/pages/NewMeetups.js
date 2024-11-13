@@ -19,7 +19,7 @@ function NewMeetupsPage(){
         console.log(meetupData)
         //  发送HTTP请求，或使用axios库发送请求，后续
         fetch(
-            'https://react-meetups-b9f5f-default-rtdb.firebaseio.com/meetups.json',
+            'http://localhost:8080/addMeet',
             {
                 method: 'POST',
                 body: JSON.stringify(meetupData),
@@ -27,9 +27,16 @@ function NewMeetupsPage(){
                     'Content-Type': 'application/json'
                 }
             }
-        ).then(()=>{
-            navigate('/');//完成promise请求后，跳转到首页
+        ).then(response=>{
+            //如果状态码是200，表示请求成功，才跳转
+            if (response.status === 200){
+                 // console.log(response)
+                //跳转到首页
+                navigate('/')
+            }
+
         });
+
     }
 
 
